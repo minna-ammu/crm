@@ -1,0 +1,40 @@
+
+   class Empolyees(models.Model):
+    name=models.CharField(max_length=200)
+    department=models.CharField(max_length=200)
+    salary=models.PositiveBigIntegerField()
+    email=models.EmailField(unique=True)
+    contact=models.CharField(null=True,max_length=200)
+    age=models.PositiveBigIntegerField()
+
+orm query for creating a new object:
+   Empolyees.objects.create(name="anu",department="hr",salary=90000,email="anu34@gamil.com",age=45)
+
+orm query for fetching all records:
+   qs=Empolyees.objects.all()
+   qs enter
+
+orm query for fetching specific empolyee details:
+   em=Empolyees.objects.get(id=2)
+   em enter
+
+
+orm query for filtering empolyees records:
+  qs=Empolyees.objects.filter(department="hr")
+  qs enter
+
+  orm query for greaterthan and equal to(>=):
+    __gte=condition
+    (<)__lte
+
+orm query for excluding object:
+  qs=Empolyees.objects.exclude(department="hr")
+
+    
+  
+
+orm query for updating any deatils:
+  
+
+
+

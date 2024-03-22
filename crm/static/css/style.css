@@ -1,0 +1,15 @@
+.port{
+    height: 150vh;
+}
+
+.grad{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+}
+
+.grad-login{
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 33%, #ffffff 66%, #ffffff 100%);
+
+}
